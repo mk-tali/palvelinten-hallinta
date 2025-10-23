@@ -31,4 +31,7 @@ Run Salt Command Locally
     -Vakiotekstit.  
     -Ei saa sepittää eikä plagioida.  
 
+a) Asensin Debian13 ongelmitta.
+b)
+
   
