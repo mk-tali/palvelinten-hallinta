@@ -37,24 +37,15 @@ Run Salt Command Locally
 
 
 a) Asensin Debian13 ongelmitta.  
-b) Saltin asennus Linuxille  
-  Muistiinpanot  
-  -Torstai 23.10.2025, oma pöytäkone
-  -Asensin wget komennolla sudo apt-get install wget  
-  -Loin hakemiston saltrepo/ komennolla mkdir saltrepo/  
-  -Siirryin ko hakemistoon komennolla cd saltrepo/  
-  -Latasin kaksi tiedostoa, https://packages.broadcom.com/artifactory/api/security/keypair/SaltProjectKey/public sekä https://github.com/saltstack/salt-install-guide/releases/latest/download/salt.sources komennoilla wget "URL"  
-  -Tarkastelin tiedostoja komennoilla less public ja less salt.sources  
-  -Katsoin sormenjäljen komennolla gpg --show-key --with-fingerprint public  
-  -Luotin ja lisäsin avaimen aiemmin lataamiini tiedostoihin komennoilla sudo cp public /etc/apt/keyrings/salt-archive-keyring.pgp  
-  sudo cp salt.sources /etc/apt/sources.list.d/  
-  -Ajoin komennon sudo apt-get install salt-minion salt-master klo 17:59. Tällä komennolla asensin saltin  
-  -Testasin saltin komenolla salt --version ja sain tulokseksi salt 3007.8 (Chlorine)  
-  -Ajoin vielä komennon sudo salt-call --local state.single file.managed /tmp/hellomiro joka loi tiedoston hellomiro  
-  -Tuli Succeeded: 1 (changed=1)  
 
-  c) Viisi tärkeintä  
-  
+b) Saltin asennus Linuxille  
+  23.10.2025 Asensin Saltin omalla pöytäkoneella VirtualBoxin kautta Debian 13 Linuxille. Aloitin asentamalla wget ohjelman komennolla sudo apt-get install wget. Asensin sen, jotta saisin ladattua tarvittavat tiedostot verkosta. Tämän jälkeen loin uuden hakemiston komennolla mkdir saltrepo. Siirryin hakemistoon komennolla cd saltrepo/.  
+  Hakemistossa latasin kaksi tiedostoa SaltProjectKey/public ja salt.sources. Nämä asensin komennoilla wget https://packages.broadcom.com/artifactory/api/security/keypair/SaltProjectKey/public ja wget https://github.com/saltstack/salt-install-guide/releases/latest/download/salt.sources. Tarkistin tiedostot komennoilla less public ja less salt.sources. Lisäksi tarksitin avaimen sormenjäljen komennolla gpg --show-key --with-fingerprint public.  
+  Seuraavaksi luotin lataamiini avaimiin ja kopioin ne hakemistoihin komenoilla sudo cp public /etc/apt/keyrings/salt-archive-keyring.pgp ja sudo cp salt.sources /etc/apt/sources.list.d/.  
+  Tämän jälkeen ajoin komennon sudo apt-get install salt-minion salt-master, jolla asensin Saltin järjestelmään. Komennolla salt --version tarkistin version ja tulokseksi sain salt 3007.8 (Chlorine). Tämä vahvisti onnistuneen asennuksen. Lopuksi testasin Saltin toimivuuden komennolla sudo salt-call --local state.single file.managed /tmp/hellomiro joka loi tiedoston hellomiro. Tulokseksi tuli Succeeded: 1 (changed=1), joka tarkoitti, että Salt toimii.  
+  (Karvinen T. 2025)
+
+c) Viisi tärkeintä  
   
 <img width="501" height="325" alt="Näyttökuva 2025-10-26 172746" src="https://github.com/user-attachments/assets/6a5af893-95ff-4937-8f35-bcb72f5fc299" />  
 
@@ -69,7 +60,14 @@ Komento sudo salt-call --local -l info state.single file.managed /tmp/hellomiro 
 Ajoin komennon sudo salt-call --local -l info state.single pkg.installed tree. Tämä tarkisti oliko tree asennettuna ja jos ei ollut niin asensi sen.  
 <img width="435" height="458" alt="Näyttökuva 2025-10-26 172830" src="https://github.com/user-attachments/assets/2dfaada0-24da-4386-b33c-baa554710015" />  
 Ajoin komennon sudo salt-call --local -l info state.single cmd.run 'touch /tmp/foo' creates="/tmp/foo". Tämä loi tiedoston "foo" tmp hakemistoon.  
-(Karvinen T. 2023)
+(Karvinen T. 2023)  
+
+d) Idempotentti  
+<img width="592" height="322" alt="image" src="https://github.com/user-attachments/assets/41146327-e670-4556-a4d5-178effeb6da2" />  
+
+Ajoin uudestaan komennon sudo salt-call --local -l info state.single pkg.installed tree. Koska tree oli jo asennettu sain tämän tuloksen. Idempotentti tarkoittaa, että mikään ei muutu, jos ajaa saman komennon monta kertaa.  
+(Karvinen T. 2023) 
+
 
 Lähteet:  
 Karvinen, Tero. 2025. Install Salt on Debian 13 Trixie. https://terokarvinen.com/install-salt-on-debian-13-trixie/  
