@@ -49,6 +49,7 @@ The Top File
     -Loin hello moduulin ja siirryin sinne. sudo mkdir -p /srv/salt/hello/ ja cd /srv/salt/hello/  
     -Ajoin pwd, tarkistin, että olen /srv/salt/hello/  
     -Menin muokkaamaan init.sls tiedostoa. sudoedit init.sls  
+    -Tiedostoon kirjoitin /tmp/hellomiro/ file.managed
     -Ajoin komennon sudo salt-call --local state.apply hello, mutta sain virheilmoituksen.   
     <img width="671" height="138" alt="image" src="https://github.com/user-attachments/assets/08adee89-78cd-4ec5-9542-e93309c3f673" />  
     -Menin tarkastelemaan init.sls tiedostoa ja huomasin, että /tmp/hellomiro perästä puuttui                   kaksoispiste ":"  
@@ -63,11 +64,14 @@ The Top File
   (Karvinen T. 2024)  
 
 ## b)Topping  
-  -plääplää
+  -Aloitin luomalla /srv/salt moduuliin top.sls tiedoston (sudoedit top.sls)  
+  -Sinne loin tekstin base:  
+  '*':  
+    - hello 
+  -Tallensin tiedoston ja ajoin komennon sudo salt-call --local state.apply  
+  -Top file ajoi tilan hello.  
+  <img width="755" height="339" alt="image" src="https://github.com/user-attachments/assets/909b3e5a-d63e-4e75-a486-0d597d989c36" />
 
-
-
-  
 
 Lähteet:  
 Karvinen Tero. 2024. Hello Salt Infra-as-Code. https://terokarvinen.com/2024/hello-salt-infra-as-code/  
