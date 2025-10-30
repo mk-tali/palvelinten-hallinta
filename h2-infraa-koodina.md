@@ -1,5 +1,5 @@
 # Infraa koodina
-x) Lue ja tiivistä  
+## x) Lue ja tiivistä  
 Hello Salt Infra-as-Code  
   -Asennetaan Salt  
   -Luodaan kansio "Hello" moduulille  
@@ -44,8 +44,8 @@ The Top File
   -Jos environmentia ei ole määritelty, minion etsii top filen jokaisesta environmentista  
   (Salt Project. 2025. The Top File)  
 
-  a)Hei infrakoodi!  
-    -Ajoin sudo apt-get -y install micro ja export EDITOR=micro  
+## a)Hei infrakoodi!  
+   -Ajoin sudo apt-get -y install micro ja export EDITOR=micro  
     -Loin hello moduulin ja siirryin sinne. sudo mkdir -p /srv/salt/hello/ ja cd /srv/salt/hello/  
     -Ajoin pwd, tarkistin, että olen /srv/salt/hello/  
     -Menin muokkaamaan init.sls tiedostoa. sudoedit init.sls  
