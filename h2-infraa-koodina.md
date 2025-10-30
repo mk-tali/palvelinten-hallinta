@@ -53,7 +53,14 @@ The Top File
     <img width="671" height="138" alt="image" src="https://github.com/user-attachments/assets/08adee89-78cd-4ec5-9542-e93309c3f673" />  
     -Menin tarkastelemaan init.sls tiedostoa ja huomasin, että /tmp/hellomiro perästä puuttui                   kaksoispiste ":"  
     -Nyt kun ajoin uudestaan sudo salt-call --local state.apply hello sain oikean tuloksen.  
-    <img width="664" height="455" alt="image" src="https://github.com/user-attachments/assets/0675b940-c1ac-410e-ba01-efb53dc771da" />
+    <img width="664" height="455" alt="image" src="https://github.com/user-attachments/assets/0675b940-c1ac-410e-ba01-efb53dc771da" />  
+    -Varmistin vielä komennolla ls /tmp/hello-miro, että se toimi.  
+    <img width="485" height="42" alt="image" src="https://github.com/user-attachments/assets/d528f760-179e-4974-b959-1456795fc98f" />
+
+  (Karvinen T. 2024)  
+
+b)Topping  
+
 
 
   
