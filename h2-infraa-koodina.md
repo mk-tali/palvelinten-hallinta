@@ -55,11 +55,15 @@ The Top File
     -Nyt kun ajoin uudestaan sudo salt-call --local state.apply hello sain oikean tuloksen.  
     <img width="664" height="455" alt="image" src="https://github.com/user-attachments/assets/0675b940-c1ac-410e-ba01-efb53dc771da" />  
     -Varmistin vielä komennolla ls /tmp/hello-miro, että se toimi.  
-    <img width="485" height="42" alt="image" src="https://github.com/user-attachments/assets/d528f760-179e-4974-b959-1456795fc98f" />
+    <img width="485" height="42" alt="image" src="https://github.com/user-attachments/assets/d528f760-179e-4974-b959-1456795fc98f" />  
+    -Viimeiseksi ajoin vielä sudo salt-call --local state.apply hello uudestaan, että saan idempotenssin, eli mikään ei muutu, vaikka ajan komennon uudestaan.  
+    <img width="750" height="339" alt="image" src="https://github.com/user-attachments/assets/de2ebf1e-3eb8-4155-b8c5-e426509ce9d2" />
+
 
   (Karvinen T. 2024)  
 
-b)Topping  
+## b)Topping  
+  -plääplää
 
 
 
