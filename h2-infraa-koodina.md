@@ -6,7 +6,7 @@ Hello Salt Infra-as-Code
   -Luodaan init.sls tiedosto, johon kirjoitetaan koodia  
   -Ajetaan ja saadaan tulos mitä tapahtui  
   -Lopuksi pitäisi saada idempotenssi  
-  (Karvinen
+  (Karvinen T. 2024)
 
   Salt Overview  
   Rules of YAML  
