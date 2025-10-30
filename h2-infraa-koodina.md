@@ -28,5 +28,40 @@ Hello Salt Infra-as-Code
     -YAML on organisoitu lohkorakenteisiin  
     -Sisennys määrittää kontekstin  
     -Kokoelma osoittaa jokaisen merkinnän viivalla ja välilyönnillä ("- ").  
+    (Salt Project, Salt overview)  
+
+The Top File  
+  -Top file on Saltissa se, joka sisältää kartoituksen verkossa olevista koneryhmistä ja niiden konfiguraatio rooleista  
+  -Oletusnimi on top.sls  
+  -Kolme komponenttia: Environment, Target ja State Files  
+  -Environments sisältää targets, ja Targets sisältää states  
+  -Yleisin ja suositeltu tapa käyttää saltia on yhdellä environmentilla "base"  
+  -Jokainen environment on määritelty saltin master konfigurointimuuttujassa "file_roots"  
+  -Jos haluua monta environmenttia, niin file_rootsia voi laajentaa  
+  -Top filea käytetään liittämään minioni environmentiin 
+  -Välilyöntiä ei kannata käyttää minion ID:ssä  
+  -Kun highstate on suoritettu ja environment määritelty, niin vain sen environmentin top file voi määrittää minionille staten  
+  -Jos environmentia ei ole määritelty, minion etsii top filen jokaisesta environmentista  
+  (Salt Project. 2025. The Top File)  
+
+  a)Hei infrakoodi!  
+    -Ajoin sudo apt-get -y install micro ja export EDITOR=micro  
+    -Loin hello moduulin ja siirryin sinne. sudo mkdir -p /srv/salt/hello/ ja cd /srv/salt/hello/  
+    -Ajoin pwd, tarkistin, että olen /srv/salt/hello/  
+    -Menin muokkaamaan init.sls tiedostoa. sudoedit init.sls  
+    -Ajoin komennon sudo salt-call --local state.apply hello, mutta sain virheilmoituksen.   
+    <img width="671" height="138" alt="image" src="https://github.com/user-attachments/assets/08adee89-78cd-4ec5-9542-e93309c3f673" />  
+    -Menin tarkastelemaan init.sls tiedostoa ja huomasin, että /tmp/hellomiro perästä puuttui                   kaksoispiste ":"  
+    -Nyt kun ajoin uudestaan sudo salt-call --local state.apply hello sain oikean tuloksen.  
+    <img width="664" height="455" alt="image" src="https://github.com/user-attachments/assets/0675b940-c1ac-410e-ba01-efb53dc771da" />
+
+
+  
+
+Lähteet:  
+Karvinen Tero. 2024. Hello Salt Infra-as-Code. https://terokarvinen.com/2024/hello-salt-infra-as-code/  
+Salt Project. Salt overview. https://docs.saltproject.io/salt/user-guide/en/latest/topics/overview.html#features-of-salt  
+Salt Project. 2025. The Top File. https://docs.saltproject.io/en/latest/ref/states/top.html  
+
 
     
