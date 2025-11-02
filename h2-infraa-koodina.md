@@ -92,7 +92,7 @@ Loin uudet kansiot ja niihin jokaiseen oman init.sls tiedoston. Kansiot loin kom
   Apche2 failed, koska minulla ei ole sitä vielä asennettuna.
 <img width="393" height="568" alt="Näyttökuva 2025-11-02 164712" src="https://github.com/user-attachments/assets/91ad4c49-96b6-43b4-b709-92d6592c5811" />  
 <img width="714" height="474" alt="image" src="https://github.com/user-attachments/assets/ce806b93-70fe-4fbb-8218-c4298ef29b38" />  
-Kaikki muut onisstui ja yhdestä tuli jo idempotenssi.  
+Kaikki muut onnistui ja yhdestä tuli jo idempotenssi.  
 
 ## d) sls tiedosto, jossa kaksi tilafunktiota  
 Aloitin luomalla uuden tiedoston sudo mkdir curlfile. Sitten loin curlfileen init.sls tiedoston, johon kirjoitin curl:
