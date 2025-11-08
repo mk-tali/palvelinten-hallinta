@@ -28,6 +28,8 @@ Salt Vagrant - automatically provision one master and two slaves
 (Karvinen. 2023)  
 
 ## a) Hello Vagrant!  
+Vagrant on asennettu  
+<img width="307" height="52" alt="image" src="https://github.com/user-attachments/assets/03138f66-600e-47a0-8e0c-1fc1e5d81000" />
 
 
  
