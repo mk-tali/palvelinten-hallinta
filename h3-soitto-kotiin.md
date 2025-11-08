@@ -25,6 +25,7 @@ Salt Vagrant - automatically provision one master and two slaves
  -Hyväksytään orjat  
  -Voit ohjata koneita  
  -Tavoitteena idempotenssi  
+ -Top file määrittää mitkä tilat ajetaan mille orjille
 (Karvinen. 2023)  
 
 ## a) Hello Vagrant!  
@@ -43,6 +44,7 @@ Molemmilla koneilla sai yhteyden toisiinsa.
 (Karvinen. 2021)
 
 ## d) Herra-orja verkossa  
+Asensin t001 koneelle salt-masterin ja t002 koneelle salt-minionin 
 
 
 
@@ -52,4 +54,5 @@ Molemmilla koneilla sai yhteyden toisiinsa.
 ## Lähteet:  
 Karvinen Tero. 2021. Two Machine Virtual Network With Debian 11 Bullseye and Vagrant. https://terokarvinen.com/2021/two-machine-virtual-network-with-debian-11-bullseye-and-vagrant/  
 Karvinen Tero 2018. Salt Quickstart – Salt Stack Master and Slave on Ubuntu Linux. https://terokarvinen.com/2018/salt-quickstart-salt-stack-master-and-slave-on-ubuntu-linux/?fromSearch=salt%20quickstart%20salt%20stack%20master%20and%20slave%20on%20ubuntu%20linux  
-Karvinen Tero 2023. Salt Vagrant - automatically provision one master and two slaves. https://terokarvinen.com/2023/salt-vagrant/#infra-as-code---your-wishes-as-a-text-file
+Karvinen Tero 2023. Salt Vagrant - automatically provision one master and two slaves. https://terokarvinen.com/2023/salt-vagrant/#infra-as-code---your-wishes-as-a-text-file  
+Salt project team. 2024. Salt Project Package Repository (repo.saltproject.io) Migration and Guidance. https://saltproject.io/blog/salt-project-package-repo-migration-and-guidance/
