@@ -45,15 +45,14 @@ Molemmilla koneilla sai yhteyden toisiinsa.
 
 ## d) Herra-orja verkossa  
 Asensin t001 koneelle salt-masterin ja t002 koneelle salt-minionin. Loin t002 koneella tiedoston komennolla sudo nano /etc/salt/minion. tänne lisäsin master: 192.168.88.101
-joka kertoo minionille kuka master on. Käynnistin minionin uudelleen sudo systemctl restart salt-minion, mutta restart komento ei toiminut niin tein uudelleen käynnistyksen komennoilla sudo systemctl stop salt-minion ja sudo systemctl start salt-minion. t001 koneella tarkastin avaimet sudo salt-key -L. Näin, että hyväksymättömissä avaimissa oli t002 ja hyväksyin sen komennolla sudo salt-key -A. Ajoin vielä uudestaan komennon sudo salt-key -L ja tarkastin, että avain oli hyväksytty. Tarkastin vielä, että master pystyi ohjaamaan minionia. <img width="366" height="55" alt="image" src="https://github.com/user-attachments/assets/154ed99c-8e95-4361-87f3-f8cec8f5529a" />
+joka kertoo minionille kuka master on. Käynnistin minionin uudelleen sudo systemctl restart salt-minion, mutta restart komento ei toiminut niin tein uudelleen käynnistyksen komennoilla sudo systemctl stop salt-minion ja sudo systemctl start salt-minion. t001 koneella tarkastin avaimet sudo salt-key -L. Näin, että hyväksymättömissä avaimissa oli t002 ja hyväksyin sen komennolla sudo salt-key -A. Ajoin vielä uudestaan komennon sudo salt-key -L ja tarkastin, että avain oli hyväksytty. Tarkastin vielä, että master pystyi ohjaamaan minionia. <img width="366" height="55" alt="image" src="https://github.com/user-attachments/assets/154ed99c-8e95-4361-87f3-f8cec8f5529a" />  
 
-
-
-
-
-
-
-
+## e) Testit verkon yli  
+Ensin loin master koneelle /srv/salt kansion. Loin sls tiedoston komennolla sudo nano /srv/salt/pkgfile.sls tähän tiedostoon lisäsin koodin, jolla asensin paketin tree ja loin tiedoston "hello". Ajoin komennon sudo salt '*' state.apply pkgfile ja tulokseksi sain.  
+<img width="537" height="587" alt="image" src="https://github.com/user-attachments/assets/d0444f09-ade1-45d9-ad76-d37d332743b8" />  
+Ajoin em komennon vielä uudestaan ja sain idempotenssin.  
+<img width="239" height="135" alt="image" src="https://github.com/user-attachments/assets/a94dca95-8db8-451d-9337-54d904f6f959" />
+(Karvinen. 2023) (Salt Project team. 2024)
  
 ## Lähteet:  
 Karvinen Tero. 2021. Two Machine Virtual Network With Debian 11 Bullseye and Vagrant. https://terokarvinen.com/2021/two-machine-virtual-network-with-debian-11-bullseye-and-vagrant/  
