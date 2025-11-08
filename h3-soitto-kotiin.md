@@ -29,7 +29,23 @@ Salt Vagrant - automatically provision one master and two slaves
 
 ## a) Hello Vagrant!  
 Vagrant on asennettu  
-<img width="307" height="52" alt="image" src="https://github.com/user-attachments/assets/03138f66-600e-47a0-8e0c-1fc1e5d81000" />
+<img width="307" height="52" alt="image" src="https://github.com/user-attachments/assets/03138f66-600e-47a0-8e0c-1fc1e5d81000" />  
+
+## b) Linux Vagrant  
+Asensin Vagrant Installerin pöytäkoneelleni (Windows 11) ja asensin Vagrantin. Tämän jälkeen avasin komentokehotteen ja loin siellä hakemiston nimeltä twohost komennolla mkdir twohost. Twohost kansioon loin Vagrant tiedoston, johon liitin ohjeessa annetun valmiin vagrantfilen, mutta vaihdoin config.vm.box kohtaan bullseye tilalle bookworm. Ajoin komennon vagrant up, joka käynnisti koneet.  
+(Karvinen. 2021)
+
+## c) Kaksin kaunihimpi
+Siirryin SSH:n avulla molempiin koneisiin komenolla vagrant ssh t001 ja -- t002.  
+<img width="573" height="159" alt="image" src="https://github.com/user-attachments/assets/14a47298-59fe-47c8-a8a0-d0c20c099826" />  
+<img width="576" height="161" alt="image" src="https://github.com/user-attachments/assets/fdb84065-eccf-44fc-b408-883784722760" />  
+Molemmilla koneilla sai yhteyden toisiinsa.  
+(Karvinen. 2021)
+
+## d) Herra-orja verkossa  
+
+
+
 
 
  
