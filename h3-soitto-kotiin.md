@@ -44,7 +44,11 @@ Molemmilla koneilla sai yhteyden toisiinsa.
 (Karvinen. 2021)
 
 ## d) Herra-orja verkossa  
-Asensin t001 koneelle salt-masterin ja t002 koneelle salt-minionin 
+Asensin t001 koneelle salt-masterin ja t002 koneelle salt-minionin. Loin t002 koneella tiedoston komennolla sudo nano /etc/salt/minion. tänne lisäsin master: 192.168.88.101
+joka kertoo minionille kuka master on. Käynnistin minionin uudelleen sudo systemctl restart salt-minion, mutta restart komento ei toiminut niin tein uudelleen käynnistyksen komennoilla sudo systemctl stop salt-minion ja sudo systemctl start salt-minion. t001 koneella tarkastin avaimet sudo salt-key -L. Näin, että hyväksymättömissä avaimissa oli t002 ja hyväksyin sen komennolla sudo salt-key -A. Ajoin vielä uudestaan komennon sudo salt-key -L ja tarkastin, että avain oli hyväksytty. Tarkastin vielä, että master pystyi ohjaamaan minionia. <img width="366" height="55" alt="image" src="https://github.com/user-attachments/assets/154ed99c-8e95-4361-87f3-f8cec8f5529a" />
+
+
+
 
 
 
