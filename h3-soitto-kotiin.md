@@ -33,7 +33,7 @@ Vagrant on asennettu
 <img width="307" height="52" alt="image" src="https://github.com/user-attachments/assets/03138f66-600e-47a0-8e0c-1fc1e5d81000" />  
 
 ## b) Linux Vagrant  
-Asensin Vagrant Installerin pöytäkoneelleni (Windows 11) ja asensin Vagrantin. Tämän jälkeen avasin komentokehotteen ja loin siellä hakemiston nimeltä twohost komennolla mkdir twohost. Twohost kansioon loin Vagrant tiedoston, johon liitin ohjeessa annetun valmiin vagrantfilen, mutta vaihdoin config.vm.box kohtaan bullseye tilalle bookworm. Ajoin komennon vagrant up, joka käynnisti koneet.  
+Avasin komentokehotteen koneellani (Windows 11) ja loin siellä hakemiston nimeltä twohost komennolla mkdir twohost. Twohost kansioon loin Vagrant tiedoston, johon liitin ohjeessa annetun valmiin vagrantfilen, mutta vaihdoin config.vm.box kohtaan bullseye tilalle bookworm. Ajoin komennon vagrant up, joka käynnisti koneet.  
 (Karvinen. 2021)
 
 ## c) Kaksin kaunihimpi
