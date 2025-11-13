@@ -1,8 +1,11 @@
 # h4 Pkg-file-service  
 
 ## Ympäristö  
+Pöytäkone
 Windows 11  
-jne...
+Nvidia GTX 1080  
+AMD Ryzen 7 2700X
+RAM 16Gt
 
 ## Tiivistelmä  
 Pkg-File-Service – Control Daemons with Salt – Change SSH Server Port  
