@@ -24,7 +24,12 @@ Pkg-File-Service – Control Daemons with Salt – Change SSH Server Port
   <img width="785" height="284" alt="image" src="https://github.com/user-attachments/assets/baeca9ac-b13d-4364-b494-a7158edf19cf" />  
   Ajoin komennon curl localhost, joka antoi apachen html sivun, jossa luki muun muassa "It works!" Korvasin apachen html sivun omallani, jonka tein komennolla echo "Hello from Salt!" | sudo tee /var/www/html/index.html. Nyt curl localhost komento antoi vastaukseksi "Hello from Salt!". Seuraavaksi poistin asentamani        apachen komennolla sudo apt-get remove --purge apache2 -y. Sekä html tiedoston sudo rm -rf /var/www/html/. Loin apachelle init.sls tiedoston sudoedit /srv/salt/apache/init.sls. Ajoin tilan sudo salt '*' state.apply apache.  
   <img width="161" height="146" alt="image" src="https://github.com/user-attachments/assets/b9c232b4-7e98-407c-b7f8-275b61b544d8" />  
-  Ajoin komennon vielä uudestaan ja sain idempotenssin. Curl localhost näytti html tiedoston, joka oli korvattu apacheen.
+  Ajoin komennon vielä uudestaan ja sain idempotenssin. Curl localhost näytti html tiedoston, joka oli korvattu apacheen.  
+
+  ## b) SSHouto  
+  Asensin SSH:n komennolla sudo apt-get install openssh-server -y. Tarkistin SSH:n toimivuuden komennolla systemctl status ssh.  
+  <img width="162" height="125" alt="image" src="https://github.com/user-attachments/assets/5b71729c-e88f-4ea5-a131-da6ecee25a56" />
+
 
 
 
