@@ -19,14 +19,14 @@ Getting Started - What is Git?
 -Gitissä on kolme pää tilaa, jossa tiedosto voi olla. Modified, Staged ja Committed.  
 (Chacon and Starub. 2014.)  
 
-## Git komennot
+Git komennot
 -git add: Lisää tekemäsi muutokset Staged kohtaan.  
 -git commit: Tallentaa tekemäsi muutokset.  
 -git pull: Hakee ja yhdistää muutokset etä repositorysta paikalliseen repository.  
 -git push: Vie paikalliseen repositoryyn tehdyt muutokset etä repositoryyn.  
 (Maddula. 2025.)  
 
-##
+
 
 ## Lähteet  
 Chacon and Straub 2014: Pro Git, 2ed: 1.3 Getting Started - What is Git?  https://git-scm.com/book/en/v2/Getting-Started-What-is-Git%3F  
