@@ -42,7 +42,10 @@ Suolax
 
 ## a) Online  
 Loin Githubissa uuden varaston, jonka nimeksi annoin a-online-snow. Kuvaukseen kirjoitin "h5 tehtävä. snow." Lisäsin myös README.md ja GNU General Public License 3 tiedoston.  
-<img width="698" height="349" alt="image" src="https://github.com/user-attachments/assets/8a68f2fe-e2d6-4a44-9ea4-0e977f515e66" />
+<img width="698" height="349" alt="image" src="https://github.com/user-attachments/assets/8a68f2fe-e2d6-4a44-9ea4-0e977f515e66" />  
+
+ ## b) Dolly  
+ 
 
   
  
