@@ -41,10 +41,18 @@ Suolax
 (Karvinen. 2024)  
 
 ## a) Online  
-Loin Githubissa uuden varaston, jonka nimeksi annoin a-online-snow. Kuvaukseen kirjoitin "h5 tehtävä. snow." Lisäsin myös README.md ja GNU General Public License 3 tiedoston.  
-<img width="698" height="349" alt="image" src="https://github.com/user-attachments/assets/8a68f2fe-e2d6-4a44-9ea4-0e977f515e66" />  
+Loin Githubissa uuden varaston, jonka nimeksi annoin online-snow. Kuvaukseen kirjoitin "Palvelinten hallinta kurssin h5 tehtävä. snow." Lisäsin myös README.md ja GNU General Public License 3 tiedoston.  
+<img width="730" height="494" alt="image" src="https://github.com/user-attachments/assets/35411796-b08a-47b2-ac13-aeb34248ce54" />  
 
  ## b) Dolly  
+ Kloonasin luomani varaston itselleni komenolla git clone https://github.com/mk-tali/online-snow. Loin koneellani tiedoston dolly.md ja puskin sen palvelimelle.  
+<img width="970" height="711" alt="image" src="https://github.com/user-attachments/assets/45865a91-413e-44be-9dfd-bb10aed89587" />  
+<img width="698" height="185" alt="image" src="https://github.com/user-attachments/assets/d806fb8a-117b-4a51-ac6a-f3c98e972937" />  
+
+## c) Doh!  
+
+
+
  
 
   
