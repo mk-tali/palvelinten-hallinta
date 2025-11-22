@@ -51,7 +51,15 @@ Loin Githubissa uuden varaston, jonka nimeksi annoin online-snow. Kuvaukseen kir
 
 ## c) Doh!  
 Loin tiedoston doh.md ja tuhosin sen git reset --hard.  
-<img width="605" height="96" alt="image" src="https://github.com/user-attachments/assets/a09ef8f1-83cc-42bf-b34a-00d790afdabf" />
+<img width="605" height="96" alt="image" src="https://github.com/user-attachments/assets/a09ef8f1-83cc-42bf-b34a-00d790afdabf" />  
+
+## d) Tukki  
+<img width="1114" height="293" alt="image" src="https://github.com/user-attachments/assets/fc6c4bd3-6e3e-4c8c-93ac-1424aa00ead1" />  
+Varastoni loki. Ensin tehtiin ensimmäinen commit, ja sen jälkeen loin dolly.md tiedoston ja commitin sen palvelimelle. Nimi ja sähköposti näkyvät oikealla tavalla.  
+
+## e) Suolattu rakki  
+
+
 
 
 
