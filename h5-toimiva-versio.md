@@ -50,6 +50,8 @@ Loin Githubissa uuden varaston, jonka nimeksi annoin online-snow. Kuvaukseen kir
 <img width="698" height="185" alt="image" src="https://github.com/user-attachments/assets/d806fb8a-117b-4a51-ac6a-f3c98e972937" />  
 
 ## c) Doh!  
+Loin tiedoston doh.md ja tuhosin sen git reset --hard.  
+<img width="605" height="96" alt="image" src="https://github.com/user-attachments/assets/a09ef8f1-83cc-42bf-b34a-00d790afdabf" />
 
 
 
