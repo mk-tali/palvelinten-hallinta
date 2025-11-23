@@ -58,16 +58,10 @@ Loin tiedoston doh.md ja tuhosin sen git reset --hard.
 Varastoni loki. Ensin tehtiin ensimmäinen commit, ja sen jälkeen loin dolly.md tiedoston ja commitin sen palvelimelle. Nimi ja sähköposti näkyvät oikealla tavalla.  
 
 ## e) Suolattu rakki  
-
-
-
-
-
+Loin online-snow repoon hakemiston salt. Salt hakemistoon loin top.sls ja snowsalt.sls tiedoston. snowsalt.sls tiedostoon kirjoitin echo koodin, joka ajettaessa näyttää tekstin "Salt toimii omasta git-hakemistosta!"  Sitten ajoin komennon sudo salt-call --local --file-root /home/miro/online-snow/salt state.apply ja sain tuloksen.  
+<img width="788" height="534" alt="image" src="https://github.com/user-attachments/assets/82607700-51cc-4786-ab76-e91e03127f5d" />  
+Kun salt toimi annoin vielä komennot git add ., git push ja git commit.
  
-
-  
- 
-
 ## Lähteet  
 Chacon and Straub 2014: Pro Git, 2ed: 1.3 Getting Started - What is Git?  https://git-scm.com/book/en/v2/Getting-Started-What-is-Git%3F  
 Karvinen Tero. 2024. https://github.com/terokarvinen/suolax.git  
