@@ -8,6 +8,7 @@ Tiedoston luonnin jälkeen starttasin ja otin teamspeakin käyttöön. sudo syst
 <img width="516" height="81" alt="image" src="https://github.com/user-attachments/assets/02d2ae24-73fc-4e2a-9284-67bfb1070b8e" />  
 
 ## TeamSpeak 3 serverin käynnistys init.sls  
+Aarni loi init.sls tiedoston vaiheista 1-8, serverin latauksesta lisenssin hyväksymiseen. Nuo tehtiin käyttäjällä teamspeak.  
 Loin Linuxssa projektin githubiin kansion startts3. Kansioon loin init.sls tiedoston, joka ajettaessa luo TeamSpeak serverille system servicen, käynnistää serverin ja avaa tarvittavat ufw portit.  
 <img width="1086" height="924" alt="image" src="https://github.com/user-attachments/assets/e278d46c-4a9e-409b-89ab-ed4b09f4ef42" />  
 <img width="961" height="266" alt="image" src="https://github.com/user-attachments/assets/788fad3a-f71d-4ab0-b1ff-c634d44b46e9" />  
