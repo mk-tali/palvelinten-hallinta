@@ -13,6 +13,9 @@ Loin Linuxssa projektin githubiin kansion startts3. Kansioon loin init.sls tiedo
 <img width="961" height="266" alt="image" src="https://github.com/user-attachments/assets/788fad3a-f71d-4ab0-b1ff-c634d44b46e9" />  
 
 Testin jälkeen pushasin muutokset githubiin.  
-Tämän jälkeen lisäsin tiedostoon vielä ohjelman, joka tallentaa TeamSpeakin automaattisesti luoman salasanan ja admin tokenin niille varattuun tiedostoon. 
+Tämän jälkeen lisäsin tiedostoon vielä ohjelman, joka tallentaa TeamSpeakin automaattisesti luoman salasanan ja admin tokenin niille varattuun tiedostoon.  
+
+# Lähteet    
+Trans ip. Installing teamspeak server in linux. https://www.transip.eu/knowledgebase/3346-installing-teamspeak-server-in-linux
 
 
